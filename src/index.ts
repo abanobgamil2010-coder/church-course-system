@@ -1,3 +1,4 @@
+import { mainModule } from "process";
 import app from "./app";
 import { logger } from "./lib/logger";
 
@@ -23,3 +24,11 @@ app.listen(port, (err) => {
 
   logger.info({ port }, "Server listening");
 });
+
+   app.get('/', (req, res) => {
+    res.json({ status: 'Server is running successfully!' });
+    });
+
+    app.get('/', (req, res) => {
+        res.send('Church Course System API is Running Successfully!');
+        });
