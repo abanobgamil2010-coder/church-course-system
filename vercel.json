@@ -1,9 +1,6 @@
 {
-  "version": 2,
+  "cleanUrls": true,
   "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/dist/index.mjs"
-    }
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
